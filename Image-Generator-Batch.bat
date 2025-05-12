@@ -14,12 +14,14 @@ for /f "usebackq delims=" %%A in ("%APPDATA%\ImageGenerator\212344588A.aop") do 
 
 :StartService
 cls
+mode con: cols=101 lines=20
 echo Welcome to Images Generator v3.1A!
 echo Please select your desired generator/option:
 echo 1. Stable Diffusion xl base 1.0
 echo 2. Stable Diffusion 3.5 large
 echo 3. Stable Diffusion 3.5 large turbo
 echo 4. Update API Key
+echo 									-Made with love by Stephin29
 
 CHOICE /C 1234 /M "Please select an option: "
 IF %ERRORLEVEL%==1 GOTO xlbase
